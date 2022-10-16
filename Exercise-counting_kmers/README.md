@@ -2,15 +2,15 @@
 
 We're going to write a python program that counts kmers from reads in a fastq file.  To do this, we'll first break the task up into smaller parts involving:
 
-* retrieving the sequences from the fastq file
-* extracting kmers from a sequence
-* counting the kmers among all sequences
+* A. retrieving the sequences from the fastq file
+* B. extracting kmers from a sequence
+* C. counting the kmers among all sequences
 
 Let's tackle each in the above order, and in the process, be generating a library of reusable python methods.
 
 
 
-## Retrieve sequences from a fastq file
+## Part A: Retrieve sequences from a fastq file
 
 Write a python script that retrieves a list of all read sequences from a fastq file. 
 
@@ -35,7 +35,7 @@ Should produce the following output:
 ['ACTGCATCCTGGAAAGAATCAATGGTGGCCGGAAAGTGTTTTTCAAATACAAGAGTGACAATGTGCCCTGTTGTTT', 'GTAATTTCCGTACCTGCCACAGTGTGGGCTCACCCTGCTTAGAGGACAGGGAAGGACCCTAAAGGTAGGCTGATGC', 'CTGGGCTGCAGCTAAGTTCTCTGCATCCTCCTTCTTGCTTGTGGCTGGGAAGAAGACAATGTTGTCGATGGTCTGG', 'CACGTTTTCTAAGCAGTTTGTACCAGATCGTGCTAACTGCTCATTGTCTTGTTGTACACACCAGTAAAGCTGGGCA', 'TGCTCATTGTCTTGTTGTACACACCAGTAAAGCTGGGCAAAAATATCATCCAAAAGTACATCGCTGAGAACTCCTA', 'CCCACCTGAAAACATTTTCTACATCCACTGTTATATGGAATGCTTGATAAGCTTTTCATTCTAACCATCAGAGCAC', 'TCTGAATAAGTCCTGCCACCAATGTTTTTCATAAGTGTGGCCATATGTTTTCATTATTTCAAACATTACTGTTAAG', 'CTCCGTTTTTTGAGAGTGCAACACATAGATACTGCTTGATAGCATTAATAAACATCTCATTTGTCCTGAAAACAGG', 'GCCTGAGTGTGCAAAAATCTTCAGAGTAAGAATACCATAGTTGCTAAATATCTTTTACCATGAGCAATAATTTTTT', 'TCTGGTGCAGCTAGATGGAATACTGAGAAAATGTTCTTCCATCCTGAACGAATATTTGCAGCCTGAGAATTAACCA']
 
 
-## Extracting kmers from a sequence
+## Part B: Extracting kmers from a sequence
 
 Write a python script to extract all kmers of a specified length from a nucleotide sequence.
 
@@ -58,7 +58,7 @@ Should produce the following output:
 ['ACTGCA', 'CTGCAT', 'TGCATC', 'GCATCC', 'CATCCT', 'ATCCTG', 'TCCTGG', 'CCTGGA', 'CTGGAA', 'TGGAAA', 'GGAAAG', 'GAAAGA', 'AAAGAA', 'AAGAAT', 'AGAATC', 'GAATCA', 'AATCAA', 'ATCAAT', 'TCAATG', 'CAATGG', 'AATGGT', 'ATGGTG', 'TGGTGG', 'GGTGGC', 'GTGGCC', 'TGGCCG', 'GGCCGG', 'GCCGGA', 'CCGGAA', 'CGGAAA', 'GGAAAG', 'GAAAGT', 'AAAGTG', 'AAGTGT', 'AGTGTT', 'GTGTTT', 'TGTTTT', 'GTTTTT', 'TTTTTC', 'TTTTCA', 'TTTCAA', 'TTCAAA', 'TCAAAT', 'CAAATA', 'AAATAC', 'AATACA', 'ATACAA', 'TACAAG', 'ACAAGA', 'CAAGAG', 'AAGAGT', 'AGAGTG', 'GAGTGA', 'AGTGAC', 'GTGACA', 'TGACAA', 'GACAAT', 'ACAATG', 'CAATGT', 'AATGTG', 'ATGTGC', 'TGTGCC', 'GTGCCC', 'TGCCCT', 'GCCCTG', 'CCCTGT', 'CCTGTT', 'CTGTTG', 'TGTTGT', 'GTTGTT', 'TTGTTT']
 
 
-## Counting all kmers from all sequences in a fastq file
+## Part C: Counting all kmers from all sequences in a fastq file
 
 Now, let's count all kmers in all sequences.  We can leverage each of the methods implemented above. Because of the way we wrote the above scripts, we can leverage them as a code library and simply import them for use in a new script.
 
