@@ -14,7 +14,7 @@ Let's tackle each in the above order, and in the process, be generating a librar
 
 Write a python script that retrieves a list of all read sequences from a fastq file. 
 
-A script <fastq_file_to_sequence_list.py> is provided as a starting point.  Fill in the missing code.
+A script [fastq_file_to_sequence_list.py](fastq_file_to_sequence_list.py) is provided as a starting point.  Fill in the missing code.
 
 A fastq file <reads.fq> is provided as input.
 
@@ -39,7 +39,7 @@ Should produce the following output:
 
 Write a python script to extract all kmers of a specified length from a nucleotide sequence.
 
-A script <fastq_file_to_sequence_list.py> is provided as a starting point.  Fill in the missing code.
+A script [fastq_file_to_sequence_list.py](fastq_file_to_sequence_list.py) is provided as a starting point.  Fill in the missing code.
 
 The script usage is:
 
@@ -62,7 +62,7 @@ Should produce the following output:
 
 Now, let's count all kmers in all sequences.  We can leverage each of the methods implemented above. Because of the way we wrote the above scripts, we can leverage them as a code library and simply import them for use in a new script.
 
-Use the script <count_kmers_from_fastq.py> as the starting point.  You'll see at the top of this script:
+Use the script [count_kmers_from_fastq.py](count_kmers_from_fastq.py) as the starting point.  You'll see at the top of this script:
 
 ```
 from sequence_to_kmer_list import *
