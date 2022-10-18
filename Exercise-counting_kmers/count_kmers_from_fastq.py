@@ -30,6 +30,13 @@ def count_kmers(kmer_list):
     ## Step 2:
     ## begin your code
 
+
+
+
+
+
+
+
     ## end your code
     ################
 
@@ -62,6 +69,13 @@ def main():
     ## begin your code, populate 'all_kmers' list with the
     ## collection of kmers from all sequences
 
+
+
+
+
+
+
+
     ## end your code
     #######################
 
@@ -75,6 +89,15 @@ def main():
     ## Step 3: sort unique_kmers by abundance descendingly
     ## (Note, you can run and test without first implementing Step 3)
     ## begin your code       hint: see the built-in 'sorted' method documentation
+
+
+
+
+
+
+
+
+
 
     ## end your code
 
