@@ -3,7 +3,6 @@
 import os, sys
 
 
-
 ## method: seq_list_from_fastq_file(fastq_filename)
 ##
 ##  Extracts the sequence lines from a fastq file and returns a list
@@ -15,7 +14,8 @@ import os, sys
 ##
 ##  returns seq_list : list of read sequences.
 ##                    ie.  ["GATCGCATAG", "CGATGCAG", ...]
-    
+
+
 def seq_list_from_fastq_file(fastq_filename):
 
     seq_list = list()
@@ -28,21 +28,19 @@ def seq_list_from_fastq_file(fastq_filename):
         line = line.rstrip()
         linecounter += 1
         if linecounter % 4 == 2:
-            seq = line
             seq_list.append(line)
-    
+
     ## end your code
 
     return seq_list
 
 
-
 def main():
 
     progname = sys.argv[0]
-    
+
     usage = "\n\n\tusage: {} filename.fastq num_seqs_show\n\n\n".format(progname)
-    
+
     if len(sys.argv) < 3:
         sys.stderr.write(usage)
         sys.exit(1)
@@ -58,7 +56,5 @@ def main():
     sys.exit(0)  # always good practice to indicate worked ok!
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
-    
