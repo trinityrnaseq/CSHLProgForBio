@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 
-def show_special_name_val():
-    print("__name__ is: " + __name__)
+import sys
+
+def decorate_name_val(name_val):
+    decorated = " ".join([get_unicorn(), name_val, get_unicorn()])
+    return(decorated)
+
+def get_unicorn():
+    # returns unicorn symbol
+    return("\U0001f984")
 
 
-
-def main():
-    show_special_name_val()
-
-    
 if __name__ == '__main__':
-    main()
-    
+    print("my_module.py running as driver: ", decorate_name_val(__name__))
+
