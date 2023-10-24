@@ -2,10 +2,7 @@
 
 from my_module import *
 
-print("checking __name__ value in module:\n")
-show_special_name_val()
+print("my_script.py: checking __name__ value:", decorate_name_val(__name__))
 
-
-print("__name__ value in my_script: " + __name__)
 
 
