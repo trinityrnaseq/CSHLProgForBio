@@ -52,11 +52,11 @@ def get_entropy(kmer):
             nucs[nuc] = 1
 
     shannon_entropy = 0
-    for nuc in nuc:
+    for nuc in nucs.keys():
         num_nuc_chars = nucs[nuc]
         frac_nuc = num_nuc_chars / len(kmer)
         
-        nuc_entropy = -1 * num_nuc_chars * frac_nuc * math.log2(frac_nuc)
+        nuc_entropy = -1 * frac_nuc * math.log2(frac_nuc)
         shannon_entropy += nuc_entropy
     
     return shannon_entropy
