@@ -41,7 +41,7 @@ Should produce the following output:
 
 Write a python script to extract all kmers of a specified length from a nucleotide sequence.
 
-A script [fastq_file_to_sequence_list.py](fastq_file_to_sequence_list.py) is provided as a starting point.  Fill in the missing code.
+A script [sequence_to_kmer_list.py](sequence_to_kmer_list.py) is provided as a starting point.  Fill in the missing code.
 
 The script usage is:
 
