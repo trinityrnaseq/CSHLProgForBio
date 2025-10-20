@@ -33,7 +33,9 @@ Now that we have a kmer count dictionary, can we build a Trinity Inchworm like a
     - Does it run at all?
     - Does it report anything? If not, could it be in an infinite loop somehow?
     - Might it incorporate some logging information so you can better monitor its progress?
-    - If it generates contigs, are they useful?  Are there other constraints we might include for the output?
+    - If it generates contigs, do they appear biological? (try blastn at NCBI)
+    - Is the k-mer size used too small? Try k = 25 like in the official inchworm
+    - Are there other constraints we might include for the output?
 
 
 
