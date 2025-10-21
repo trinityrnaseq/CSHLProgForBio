@@ -115,5 +115,5 @@ Challenge:  include another method that computes the complexity of each kmer usi
     
 Add the entropy value as another column in the above printing.
 
-    <img width="612" height="406" alt="image" src="https://github.com/user-attachments/assets/49ba8efc-20a1-4946-a53a-62d49f5cde1c" />
+<img width="612" height="406" alt="image" src="https://github.com/user-attachments/assets/49ba8efc-20a1-4946-a53a-62d49f5cde1c" />
 
